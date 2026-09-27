@@ -1,0 +1,8 @@
+# Turns off at 2000 every day. Turns on at 0700 every day
+0 20 * * * /home/photoframe/script/screen_off.sh
+0 7 * * * /home/photoframe/script/screen_on.sh
+# Stops slideshow at 2100
+30 23 * * * /home/photoframe/script/photo_slideshow_stop.sh
+0 0 * * * /home/photoframe/script/photoframe_download.py
+# Starts slideshow at 0030 every day
+30 00 * * * /home/photoframe/script/photo_slideshow_start.sh
